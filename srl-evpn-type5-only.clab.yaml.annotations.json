@@ -4,8 +4,8 @@
       "id": "freeText_1775146175488",
       "text": "SR Linux EVPN with Type-5 Routes Only",
       "position": {
-        "x": 242.34567264102293,
-        "y": 83.6472739592233
+        "x": 226.90031081188658,
+        "y": 84.61260907354432
       },
       "fontSize": 28,
       "fontColor": "#ffffff",
@@ -19,27 +19,27 @@
       "id": "freeText_1782954751080",
       "text": "Prod: 10.100.x.x",
       "position": {
-        "x": -692.2012966281139,
-        "y": 461.52381700441504
+        "x": -394.7092448783542,
+        "y": 217.13489296224031
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#05f54d",
       "fontWeight": "normal",
       "fontStyle": "normal",
       "textDecoration": "none",
       "textAlign": "left",
       "fontFamily": "Arial",
-      "width": 212,
-      "height": 79
+      "width": 286,
+      "height": 121
     },
     {
       "id": "freeText_1782954802747",
       "text": "Dev: 10.200.x.x",
       "position": {
-        "x": -693.2736553276383,
-        "y": 490.4775018915695
+        "x": -395.06619263711616,
+        "y": 257.6816890296451
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#d400ff",
       "fontWeight": "normal",
       "fontStyle": "normal",
@@ -51,10 +51,10 @@
       "id": "freeText_1782954802747-1",
       "text": "Dev VRF",
       "position": {
-        "x": -142.96237667989016,
-        "y": 606.3392995490519
+        "x": -163.13132934089083,
+        "y": 599.6163153287184
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#d400ff",
       "fontWeight": "normal",
       "fontStyle": "normal",
@@ -66,10 +66,10 @@
       "id": "freeText_1782954802747-1-1",
       "text": "Dev VRF",
       "position": {
-        "x": 327.0031036523725,
+        "x": 298.4304207159549,
         "y": 602.2845411665096
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#d400ff",
       "fontWeight": "normal",
       "fontStyle": "normal",
@@ -81,10 +81,10 @@
       "id": "freeText_1782954802747-1-1-1",
       "text": "Dev VRF",
       "position": {
-        "x": 811.1184418567188,
-        "y": 612.379640656051
+        "x": 787.5879970855514,
+        "y": 607.3374024908009
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#d400ff",
       "fontWeight": "normal",
       "fontStyle": "normal",
@@ -96,42 +96,44 @@
       "id": "freeText_1782954802747-1-1-1-1",
       "text": "Dev VRF",
       "position": {
-        "x": 1272.594007465731,
-        "y": 606.9098964863002
+        "x": 1242.34057847423,
+        "y": 600.1869122659667
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#d400ff",
       "fontWeight": "normal",
       "fontStyle": "normal",
       "textDecoration": "none",
       "textAlign": "left",
-      "fontFamily": "Arial"
+      "fontFamily": "Arial",
+      "width": 217,
+      "height": 124
     },
     {
       "id": "freeText_1782954751080-1",
       "text": "Prod VRF",
       "position": {
-        "x": -380.82536509725117,
-        "y": 606.974006530411
+        "x": -390.90984142775153,
+        "y": 600.2510223100774
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#05f54d",
       "fontWeight": "normal",
       "fontStyle": "normal",
       "textDecoration": "none",
       "textAlign": "left",
       "fontFamily": "Arial",
-      "width": 212,
-      "height": 79
+      "width": 210,
+      "height": 139
     },
     {
       "id": "freeText_1782954751080-1-1",
       "text": "Prod VRF",
       "position": {
-        "x": 98.979049605655,
-        "y": 607.4693043770857
+        "x": 75.44860483448755,
+        "y": 604.1078122669189
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#05f54d",
       "fontWeight": "normal",
       "fontStyle": "normal",
@@ -139,41 +141,41 @@
       "textAlign": "left",
       "fontFamily": "Arial",
       "width": 212,
-      "height": 79
+      "height": 121
     },
     {
       "id": "freeText_1782954751080-1-1-1",
       "text": "Prod VRF",
       "position": {
-        "x": 573.3998933584446,
+        "x": 559.9539249177775,
         "y": 607.5181429688355
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#05f54d",
       "fontWeight": "normal",
       "fontStyle": "normal",
       "textDecoration": "none",
       "textAlign": "left",
       "fontFamily": "Arial",
-      "width": 212,
-      "height": 79
+      "width": 175,
+      "height": 144
     },
     {
       "id": "freeText_1782954751080-1-1-1-1",
       "text": "Prod VRF",
       "position": {
-        "x": 1040.5354021162905,
+        "x": 1032.1316718408734,
         "y": 604.8783703735015
       },
-      "fontSize": 20,
+      "fontSize": 30,
       "fontColor": "#05f54d",
       "fontWeight": "normal",
       "fontStyle": "normal",
       "textDecoration": "none",
       "textAlign": "left",
       "fontFamily": "Arial",
-      "width": 212,
-      "height": 79
+      "width": 198,
+      "height": 142
     }
   ],
   "freeShapeAnnotations": [
