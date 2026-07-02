@@ -1,0 +1,105 @@
+name: srl-evpn-type5-only
+prefix: ""
+
+topology:
+  kinds:
+    nokia_srlinux:
+      type: ixr-d2l
+      image: ghcr.io/nokia/srlinux:26.3.2
+      startup-config: srl/__clabNodeName__.srl.cfg
+
+  groups:
+    frr:
+      image: quay.io/frrouting/frr:10.6.1
+      binds:
+        - frr/__clabNodeName__:/etc/frr
+
+
+  nodes:
+    spine1:
+      kind: nokia_srlinux
+    spine2:
+      kind: nokia_srlinux
+    leaf1:
+      kind: nokia_srlinux
+    leaf2:
+      kind: nokia_srlinux
+    leaf3:
+      kind: nokia_srlinux
+    leaf4:
+      kind: nokia_srlinux
+    prod-1-1:
+      kind: linux
+      group: frr
+    prod-1-2:
+      kind: linux
+      group: frr
+    prod-2-1:
+      kind: linux
+      group: frr
+    prod-2-2:
+      kind: linux
+      group: frr
+    prod-3-1:
+      kind: linux
+      group: frr
+    prod-3-2:
+      kind: linux
+      group: frr
+    prod-4-1:
+      kind: linux
+      group: frr
+    prod-4-2:
+      kind: linux
+      group: frr
+    dev-1-1:
+      kind: linux
+      group: frr
+    dev-1-2:
+      kind: linux
+      group: frr
+    dev-2-1:
+      kind: linux
+      group: frr
+    dev-2-2:
+      kind: linux
+      group: frr
+    dev-3-1:
+      kind: linux
+      group: frr
+    dev-3-2:
+      kind: linux
+      group: frr
+    dev-4-1:
+      kind: linux
+      group: frr
+    dev-4-2:
+      kind: linux
+      group: frr
+
+
+  links:
+    - endpoints: [ "spine1:e1-1", "leaf1:e1-1" ]
+    - endpoints: [ "spine1:e1-2", "leaf2:e1-1" ]
+    - endpoints: [ "spine1:e1-3", "leaf3:e1-1" ]
+    - endpoints: [ "spine1:e1-4", "leaf4:e1-1" ]
+    - endpoints: [ "spine2:e1-1", "leaf1:e1-2" ]
+    - endpoints: [ "spine2:e1-2", "leaf2:e1-2" ]
+    - endpoints: [ "spine2:e1-3", "leaf3:e1-2" ]
+    - endpoints: [ "spine2:e1-4", "leaf4:e1-2" ]
+    - endpoints: [ "leaf1:e1-3", "prod-1-1:eth1" ]
+    - endpoints: [ "leaf1:e1-4", "prod-1-2:eth1" ]
+    - endpoints: [ "leaf1:e1-5", "dev-1-1:eth1" ]
+    - endpoints: [ "leaf1:e1-6", "dev-1-2:eth1" ]
+    - endpoints: [ "leaf2:e1-3", "prod-2-1:eth1" ]
+    - endpoints: [ "leaf2:e1-4", "prod-2-2:eth1" ]
+    - endpoints: [ "leaf2:e1-5", "dev-2-1:eth1" ]
+    - endpoints: [ "leaf2:e1-6", "dev-2-2:eth1" ]
+    - endpoints: [ "leaf3:e1-3", "prod-3-1:eth1" ]
+    - endpoints: [ "leaf3:e1-4", "prod-3-2:eth1" ]
+    - endpoints: [ "leaf3:e1-5", "dev-3-1:eth1" ]
+    - endpoints: [ "leaf3:e1-6", "dev-3-2:eth1" ]
+    - endpoints: [ "leaf4:e1-3", "prod-4-1:eth1" ]
+    - endpoints: [ "leaf4:e1-4", "prod-4-2:eth1" ]
+    - endpoints: [ "leaf4:e1-5", "dev-4-1:eth1" ]
+    - endpoints: [ "leaf4:e1-6", "dev-4-2:eth1" ]
